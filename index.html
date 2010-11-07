@@ -31,7 +31,7 @@ label {display:block;font-weight:bold;margin:0.5em 0;}
                     $('context').setStyle('opacity','1.0').removeClass('loading');                    
                     $('tags').set('value', tags);
                },
-               onRequest: function(scriptSrc, scriptEl) {console.log((scriptEl));
+               onRequest: function(scriptSrc, scriptEl) {
                     $('context').setStyle('opacity','0.5').addClass('loading'); 
                     if(window.console) {console.log('make a request!'); }
                }
